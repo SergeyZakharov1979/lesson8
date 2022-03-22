@@ -1,0 +1,520 @@
+/* 
+! Тексттовые свойства
+?font+
+? font-family+
+? font-style+
+? font-variant+
+? font-size+
+? line-height+
+? font-weight+
+
+! Шрифтовые свойства
+? text-align+
+? vertical-align+(особое внимание)
+http://htmlbook.ru/css/vertical-align
+? letter-spacing+
+? word-spasing+
+? text-indent+
+? text-transform+
+? text-decoration+
+? text-shadow+
+? color+
+? @font-face (подключение шрифтов разными способами)+(ocoбое внимание: трансфонтеры, GoogleFonts)
+? word-wrap+
+? white-space+(особое внимание)
+
+!Блочно-строчная модель документа
+? width, max-width, min-width
+https://habr.com/ru/post/483634/
+http://htmlbook.ru/samlayout/blochnaya-verstka/blochnaya-model
+? padding+
+? margin(схлопывание)+
+http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy
+? overflow+(особое внимание)
+? стилизация ссылок+
+? img+(особое внимание)
+? display: inline-block+(особое внимание)
+https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
+? display: block+
+? Валидатор (особое внимание)+
+? git и github (особое внимание)+
+
+!Оформление
+? outline+
+? border (transparent)+
+? border-radius+
+? opasity+
+? visibility+
+? box-shadow (filter:drop-shadow)+
+* background: color image position size repeat attachment
+? background-color+
+? background-image+
+? background-position+
+? background-size
+? background-repeat+
+? background-attachment
+*https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* font-size: 40px; */
+}
+
+.wrapper {
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+
+.main-header {
+}
+.general-title {
+}
+.main-page {
+  padding-bottom: 500px;
+  background: #f5f5f5;
+}
+
+/* .list {
+  font-size: 0;
+  padding: 0;
+  margin: 0px auto 0px auto;
+  line-height: 80px;
+  list-style: none;
+  border: 1px solid #000000;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 0 100px 0 20px;
+  margin: 0px 20px 20px 0px;
+  background-color: #ffffff;
+  background-image: url(../img/car_breaks_24x.png);
+  background-repeat: no-repeat;
+  background-position: 93% 9px;
+  border: 1px solid #000;
+} */
+
+.main-footer {
+}
+
+/** ----------------------------------- */
+/* 
+.contact-block {
+  max-width: 340px;
+  margin: 150px auto;
+  padding: 100px 0 100px 0;
+  border: 1px solid #999999;
+
+  font-family: "Roboto", sans-serif;
+  color: #4b4b4b;
+}
+.contact-block__container {
+  max-width: 237px;
+  margin: 0 auto;
+}
+.contact-block__title {
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+}
+.contact-block__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+.contact-block__listitem {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  padding-left: 35px;
+}
+
+.contact-block__listitem:nth-child(1) {
+  background: url(../img/place_24px.png) -1px 2px no-repeat;
+}
+.contact-block__listitem:nth-child(2) {
+  background: url(../img/smartphone_24px.png) 2px 2px no-repeat;
+}
+.contact-block__listitem:nth-child(3) {
+  background: url(../img/email_24px.png) 0 4px no-repeat;
+}
+.contact-block__listitem:nth-child(4) {
+  background: url(../img/timer_24px.png) 1px 2px no-repeat;
+} */
+
+/** ----------------------------------- */
+
+/**----------------MAIN-SCREEN---------------- */
+
+.main-screen {
+  padding-top: 280px;
+  padding-bottom: 312px;
+  background: #002034 url(../img/BG\ Image.jpg) 0 0 / cover no-repeat;
+}
+
+.main-screen__container {
+  max-width: 1020px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.main-screen__title {
+  max-width: 583px;
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+.btn {
+  display: block;
+  max-width: 300px;
+  padding: 12px 47px 12px 19px;
+  margin: 0;
+
+  white-space: nowrap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  color: #ffffff;
+  background: url(../img/arrow_forward_24px.png) 96% 50% no-repeat,
+    url(../img/Button\ Treatment\ 48px.png) 100% 0 no-repeat,
+    url(../img/Button\ Default\ -\ Filled.jpg) 0 0 repeat-x;
+  /* border-radius: 2px; */
+  border: none;
+}
+
+/* *---------------WHOWEARE-------------------- */
+
+.whoweare {
+  max-width: 1020px;
+  margin: -80px auto 250px auto;
+  padding-top: 100px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: #ffffff url(../img/Gears.png) no-repeat 100% 0;
+  border: 1px solid transparent;
+}
+
+.whoweare__container {
+  max-width: 846px;
+  margin: 0 auto;
+}
+
+.whoweare__subtitle {
+  margin-bottom: 33px;
+  padding-left: 35px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
+  color: #4b4b4b;
+}
+
+.whoweare__title {
+  margin-bottom: 36px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+}
+
+.whoweare__content {
+  margin-bottom: 54px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  color: #4b4b4b;
+}
+
+.whoweare__img {
+  margin-bottom: -120px;
+}
+
+.whoweare__img img {
+  display: block;
+}
+
+/* *---------------OUR-SERVICES-----------------*/
+
+.our-services {
+  padding: 110px 0 122px 0;
+}
+
+.our-services__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.our-services__subtitle {
+  margin-bottom: 33px;
+  padding-left: 43px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #4b4b4b;
+
+  background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
+}
+
+.our-services__title {
+  margin-bottom: 78px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133c;
+}
+
+.our-services__list {
+  margin: 0;
+  margin-bottom: 66px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.our-services__itemlist {
+  display: inline-block;
+  max-width: 324px;
+  padding: 50px 44px 50px 44px;
+  margin: 0 24px 24px 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+
+  background-color: #ffffff;
+}
+
+.our-services__itemlist:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.our-services__itemlist:hover {
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24))
+    drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+.itemlist__img {
+  margin-bottom: 33px;
+}
+
+.itemlist__title {
+  margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #02133c;
+}
+
+.itemlist__description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+}
+
+.btn--center {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* *--------------OUR-IMPACT--------------------*/
+
+.our-impact {
+  padding: 112px 0 212px 0;
+  background: #02133c url(../img/overlay\ image.png) 0 0 no-repeat;
+}
+
+.our-impact__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.our-impact__bg-img {
+  float: right;
+  margin: -180px 0 0 0;
+  text-align: right;
+  font-size: 0;
+}
+
+.our-impact__bg-img img {
+  display: block;
+}
+
+.our-impact__subtitle {
+  margin-bottom: 33px;
+  padding-left: 43px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #d5d5d5;
+
+  background: url(../img/Overline\ Markwhite.png) 0 -2px no-repeat;
+}
+
+.our-impact__title {
+  max-width: 411px;
+  margin-bottom: 79px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.our-impact__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-impact__listitem {
+  display: inline-block;
+  max-width: 237px;
+  min-width: 210px;
+  padding-left: 87px;
+  margin-right: 24px;
+  overflow: hidden;
+  /* line-height: 40px; */
+}
+
+.our-impact__listitem:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.our-impact__listitem:nth-child(1) {
+  background: url(../img/car_oil-24x.png) 0 0 no-repeat;
+}
+.our-impact__listitem:nth-child(2) {
+  margin-bottom: -24px;
+  background: url(../img/car_transmission_24x.png) 0 0 no-repeat;
+  border: 1px solid transition;
+}
+.our-impact__listitem:nth-child(3) {
+  background: url(../img/car_alignment_24x.png) 0 0 no-repeat;
+}
+.our-impact__listitem:nth-child(4) {
+  background: url(../img/car_engine_2_24x.png) 0 0 no-repeat;
+}
+
+.our-impact__listitem p {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #C40B0B;
+}
+
+.our-impact__listitem span {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #F5F5F5;
+}
+
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1020px;
+  margin: -70px auto 0 auto;
+  padding: 43px 70px 48px 70px;
+  background-color: #fff;
+}
+
+.bottom-block__paragraph {
+  /* display: inline-block; */
+  max-width: 562px;
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #02133C;
+}
+
+.wrap-btn {
+
+}
+
+.btn--bottom-block {
+  /* background: none;
+  color: #000;
+  border: 1px solid #000; */
+}
